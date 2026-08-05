@@ -142,7 +142,7 @@ export default function MarketingPage() {
                 loop 
                 muted 
                 playsInline
-                className="w-full max-w-[800px] lg:scale-125 h-full object-contain relative z-20 drop-shadow-2xl transform lg:-translate-y-4"
+                className="w-full max-w-[800px] lg:scale-[1.18] h-full object-contain relative z-20 drop-shadow-2xl transform lg:-translate-y-4"
               />
             </div>
           </div>
