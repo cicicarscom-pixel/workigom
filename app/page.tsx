@@ -136,37 +136,14 @@ export default function MarketingPage() {
             </div>
             
             <div className="relative w-full h-[500px] flex items-center justify-center glow-effect">
-              <div className="absolute w-80 h-80 rounded-full border border-blue-500/30 bg-[#0B1426]/50 backdrop-blur-md flex flex-col items-center justify-center z-20 shadow-[0_0_50px_rgba(59,130,246,0.2)]">
-                <div className="w-24 h-24 mb-4 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-5xl shadow-lg shadow-blue-500/40">
-                  W
-                </div>
-                <span className="text-2xl font-bold mb-1">Workigom</span>
-                <span className="text-xs text-blue-400 font-semibold tracking-widest">BUSINESS OPERATING SYSTEM</span>
-              </div>
-              <div className="absolute w-[450px] h-[450px] rounded-full border border-[#1E293B] border-dashed animate-[spin_40s_linear_infinite] z-10"></div>
-              <div className="absolute w-[600px] h-[600px] rounded-full border border-[#1E293B]/50 animate-[spin_60s_linear_infinite_reverse] z-0"></div>
-              <div className="absolute -left-10 top-20 z-30 glass-card p-5 rounded-2xl w-64 border border-blue-500/20 shadow-xl shadow-black/50 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
-                  <i className="fa-solid fa-message text-xl"></i>
-                </div>
-                <h3 className="text-lg font-bold mb-1">Flow</h3>
-                <p className="text-xs text-[#94A3B8] mb-4">Esnaf &amp; KOBİ'ler için<br/>AI destekli sosyal medya, muhasebe ve yönetim platformu.</p>
-                <a className="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1" href="/flow">Flow'a Git <i className="fa-solid fa-arrow-right"></i></a>
-              </div>
-              <div className="absolute -right-10 bottom-20 z-30 glass-card p-5 rounded-2xl w-64 border border-blue-500/20 shadow-xl shadow-black/50 transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
-                  <i className="fa-solid fa-file-invoice text-xl"></i>
-                </div>
-                <h3 className="text-lg font-bold mb-1">Ledger</h3>
-                <p className="text-xs text-[#94A3B8] mb-4">Muhasebeciler için<br/>AI destekli muhasebe, mükellef yönetimi ve entegrasyon platformu.</p>
-                <a className="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1" href="/ledger">Ledger'a Git <i className="fa-solid fa-arrow-right"></i></a>
-              </div>
-              <div className="absolute top-10 right-20 w-8 h-8 rounded-full bg-blue-500/20 border border-blue-500 flex items-center justify-center z-10 animate-pulse">
-                <i className="fa-solid fa-question text-[10px] text-blue-400"></i>
-              </div>
-              <div className="absolute bottom-10 left-20 w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500 flex items-center justify-center z-10 animate-pulse" style={{animationDelay: '1s'}}>
-                <i className="fa-solid fa-question text-[10px] text-purple-400"></i>
-              </div>
+              <video 
+                src="/workigom1.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full max-w-[500px] h-full object-contain relative z-20 drop-shadow-2xl"
+              />
             </div>
           </div>
         </section>
@@ -215,35 +192,7 @@ export default function MarketingPage() {
                   </a>
                 </div>
                 <div className="relative flex items-center justify-center h-full min-h-[300px]">
-                  <div className="w-48 h-[400px] bg-[#0A101D] border-[6px] border-gray-800 rounded-[2rem] shadow-2xl relative overflow-hidden flex flex-col z-10">
-                    <div className="h-6 w-full flex justify-center mt-2 absolute top-0 z-20">
-                      <div className="w-16 h-4 bg-gray-800 rounded-b-xl"></div>
-                    </div>
-                    <div className="px-4 pt-10 pb-4 border-b border-[#1E293B]/30 bg-[#0A101D] relative z-10">
-                      <div className="text-xs font-bold text-white mb-1">Merhaba! 👋</div>
-                      <div className="text-[10px] text-[#94A3B8]">Bugün ne yapmak istersiniz?</div>
-                    </div>
-                    <div className="p-4 space-y-2 flex-grow bg-gradient-to-b from-[#0A101D] to-[#121B2F] relative z-10">
-                      <div className="bg-[#0B1426] border border-[#1E293B]/50 rounded-lg p-2.5 flex items-center gap-3">
-                        <div className="w-7 h-7 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 text-xs"><i className="fa-solid fa-hashtag"></i></div>
-                        <div className="flex-grow"><div className="text-[10px] font-semibold text-white">Sosyal Medya</div><div className="text-[8px] text-[#94A3B8] mt-0.5">Planlama &amp; Analiz</div></div>
-                        <i className="fa-solid fa-chevron-right text-[#94A3B8] text-[8px]"></i>
-                      </div>
-                      <div className="bg-[#0B1426] border border-[#1E293B]/50 rounded-lg p-2.5 flex items-center gap-3">
-                        <div className="w-7 h-7 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-xs"><i className="fa-solid fa-robot"></i></div>
-                        <div className="flex-grow"><div className="text-[10px] font-semibold text-white">AI Asistan</div><div className="text-[8px] text-[#94A3B8] mt-0.5">Sorular &amp; İçerik</div></div>
-                        <i className="fa-solid fa-chevron-right text-[#94A3B8] text-[8px]"></i>
-                      </div>
-                      <div className="bg-[#0B1426] border border-[#1E293B]/50 rounded-lg p-2.5 flex items-center gap-3">
-                        <div className="w-7 h-7 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 text-xs"><i className="fa-solid fa-wallet"></i></div>
-                        <div className="flex-grow"><div className="text-[10px] font-semibold text-white">Muhasebe</div><div className="text-[8px] text-[#94A3B8] mt-0.5">Fatura &amp; Gider</div></div>
-                        <i className="fa-solid fa-chevron-right text-[#94A3B8] text-[8px]"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute top-16 -left-2 w-10 h-10 rounded-2xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center text-white shadow-lg transform -rotate-12 z-20"><i className="fa-brands fa-instagram text-xl"></i></div>
-                  <div className="absolute top-1/2 -left-6 w-10 h-10 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white shadow-lg transform rotate-12 z-20"><i className="fa-brands fa-whatsapp text-xl"></i></div>
-                  <div className="absolute top-1/3 -left-4 w-6 h-6 rounded-xl bg-[#0A101D] border border-[#1E293B] flex items-center justify-center text-blue-400 shadow-lg transform -rotate-6 z-20"><i className="fa-solid fa-xmark text-xs"></i></div>
+                  <img src="/workigom3.png" alt="Workigom Flow App" className="w-full max-w-[280px] object-contain relative z-10 drop-shadow-2xl" />
                 </div>
               </div>
             </div>
@@ -278,41 +227,7 @@ export default function MarketingPage() {
                   </a>
                 </div>
                 <div className="relative flex items-center justify-center h-full min-h-[300px]">
-                  <div className="w-full max-w-[320px] perspective-1000 z-10 translate-x-4">
-                    <div className="w-full aspect-[16/10] bg-[#0A101D] border-[6px] border-gray-800 rounded-t-xl shadow-2xl relative overflow-hidden flex flex-col">
-                      <div className="flex-grow p-3 grid grid-cols-4 gap-3 bg-[#05080f]">
-                        <div className="col-span-1 border-r border-[#1E293B]/50 flex flex-col gap-3 pr-2">
-                          <div className="flex items-center gap-2 mb-2">
-                            <div className="w-4 h-4 rounded bg-blue-500 flex items-center justify-center text-[8px] text-white font-bold">W</div>
-                            <div className="w-12 h-2 bg-gray-600 rounded"></div>
-                          </div>
-                          <div className="w-full h-4 bg-blue-500/20 rounded flex items-center px-1"><div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div><div className="w-8 h-1.5 bg-blue-400 rounded"></div></div>
-                          <div className="w-3/4 h-3 bg-[#14203A] rounded"></div>
-                        </div>
-                        <div className="col-span-3 flex flex-col gap-3">
-                          <div className="flex justify-between items-center">
-                            <div className="w-16 h-3 bg-gray-600 rounded"></div>
-                            <div className="flex gap-2">
-                              <div className="w-4 h-4 rounded-full bg-[#14203A]"></div>
-                              <div className="w-4 h-4 rounded-full bg-[#14203A]"></div>
-                            </div>
-                          </div>
-                          <div className="flex-grow bg-[#0B1426] rounded-lg border border-[#1E293B]/50 relative overflow-hidden p-2 flex flex-col">
-                            <div className="w-20 h-2 bg-gray-600 rounded mb-2"></div>
-                            <div className="flex-grow relative flex items-end">
-                              <svg className="w-full h-full text-blue-500" preserveAspectRatio="none" viewBox="0 0 100 30">
-                                <path d="M0 30 L0 25 Q10 20 20 25 T40 15 T60 20 T80 5 L100 10 L100 30 Z" fill="currentColor" fillOpacity="0.2"></path>
-                                <path d="M0 25 Q10 20 20 25 T40 15 T60 20 T80 5 L100 10" fill="none" stroke="currentColor" strokeWidth="1.5"></path>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="w-[110%] -ml-[5%] h-3 bg-gray-700 rounded-b-xl shadow-2xl relative z-10 flex justify-center items-start border-t border-gray-600">
-                      <div className="w-1/5 h-1 bg-gray-500 rounded-b-md"></div>
-                    </div>
-                  </div>
+                  <img src="/workigom2.png" alt="Workigom Ledger Web" className="w-full max-w-[320px] object-contain relative z-10 drop-shadow-2xl translate-x-4" />
                 </div>
               </div>
             </div>
