@@ -35,8 +35,8 @@ export default function LedgerMarketingPage() {
             <a className="hover:text-white transition-colors flex items-center gap-1" href="#">Kaynaklar <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path></svg></a>
           </nav>
           <div className="flex items-center gap-4">
-            <a className="text-sm font-medium hover:text-white transition-colors" href="/login">Giriş Yap</a>
-            <a className="bg-[#8C3FE8] hover:bg-purple-600 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors" href="/login">Ücretsiz Dene</a>
+            <a className="text-sm font-medium hover:text-white transition-colors" href="/login?app=ledger">Giriş Yap</a>
+            <a className="bg-[#8C3FE8] hover:bg-purple-600 text-white px-5 py-2 rounded-lg text-sm font-medium transition-colors" href="/login?app=ledger">Ücretsiz Dene</a>
           </div>
         </div>
       </header>
@@ -65,7 +65,7 @@ export default function LedgerMarketingPage() {
                 <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[#00F0FF] text-sm">bolt</span> Tek Tıkla İşlem</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a className="bg-[#8C3FE8] hover:bg-purple-600 text-white px-6 py-2 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 text-sm" href="/login">
+                <a className="bg-[#8C3FE8] hover:bg-purple-600 text-white px-6 py-2 rounded-lg font-medium transition-colors flex items-center justify-center gap-2 text-sm" href="/login?app=ledger">
                   14 Gün Ücretsiz Dene
                   <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </a>

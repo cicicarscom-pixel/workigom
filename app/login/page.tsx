@@ -1,17 +1,55 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/utils/supabase/client";
 
-export default function LoginPage() {
+function LoginContent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
+  const searchParams = useSearchParams();
+  
+  const appName = searchParams.get("app");
+
+  let branding = {
+    title: "Workigom",
+    subTitle: "İşletmenizi yöneten tek yapay zekaya dönün.",
+    color: "#00F0FF",
+    bgColor: "bg-[#00F0FF]/20",
+    borderColor: "border-[#00F0FF]/50",
+    shadow: "shadow-[0_0_15px_rgba(0,240,255,0.3)]",
+    logoChar: "W",
+    redirectUrl: "/flow"
+  };
+
+  if (appName === "ledger") {
+    branding = {
+      title: "Workigom Ledger",
+      subTitle: "Muhasebe süreçlerinizi yöneten yapay zekaya dönün.",
+      color: "#8A2BE2",
+      bgColor: "bg-[#8A2BE2]/20",
+      borderColor: "border-[#8A2BE2]/50",
+      shadow: "shadow-[0_0_15px_rgba(138,43,226,0.3)]",
+      logoChar: "L",
+      redirectUrl: "/ledger"
+    };
+  } else if (appName === "flow") {
+    branding = {
+      title: "Workigom Flow",
+      subTitle: "İşletmenizi yöneten tek yapay zekaya dönün.",
+      color: "#00F0FF",
+      bgColor: "bg-[#00F0FF]/20",
+      borderColor: "border-[#00F0FF]/50",
+      shadow: "shadow-[0_0_15px_rgba(0,240,255,0.3)]",
+      logoChar: "W",
+      redirectUrl: "/flow"
+    };
+  }
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,12 +66,12 @@ export default function LoginPage() {
       setError(signInError.message);
       setLoading(false);
     } else {
-      router.push("/flow"); // or wherever the dashboard is
+      router.push(branding.redirectUrl);
     }
   };
 
   return (
-    <main className="min-h-screen w-full bg-[#05070A] flex items-center justify-center relative overflow-hidden selection:bg-[#00F0FF]/30">
+    <main className="min-h-screen w-full bg-[#05070A] flex items-center justify-center relative overflow-hidden">
       
       {/* Background Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-[#8A2BE2]/20 to-[#00F0FF]/10 rounded-full blur-[120px] pointer-events-none opacity-50 z-0"></div>
@@ -48,16 +86,16 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-[#00F0FF]/20 flex items-center justify-center border border-[#00F0FF]/50 shadow-[0_0_15px_rgba(0,240,255,0.3)]">
-              <span className="text-[#00F0FF] text-[16px] font-black">W</span>
+            <div className={`w-8 h-8 rounded-lg ${branding.bgColor} flex items-center justify-center border ${branding.borderColor} ${branding.shadow}`}>
+              <span style={{color: branding.color}} className="text-[16px] font-black">{branding.logoChar}</span>
             </div>
-            <span className="text-white font-extrabold text-[20px] tracking-tight">Workigom <span className="text-[#00F0FF]">Flow</span></span>
+            <span className="text-white font-extrabold text-[20px] tracking-tight">{branding.title}</span>
           </Link>
         </div>
 
         <div className="text-center mb-8">
           <h1 className="text-white text-[28px] font-bold tracking-tight mb-2">Giriş Yap</h1>
-          <p className="text-[#8E95B3] text-[14px]">İşletmenizi yöneten tek yapay zekaya dönün.</p>
+          <p className="text-[#8E95B3] text-[14px]">{branding.subTitle}</p>
         </div>
 
         {/* Google Login Button */}
@@ -66,7 +104,7 @@ export default function LoginPage() {
           whileTap={{ scale: 0.98 }}
           onClick={() => {
             const supabase = createClient();
-            supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin + '/flow' } });
+            supabase.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: window.location.origin + branding.redirectUrl } });
           }}
           type="button"
           className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 flex items-center justify-center gap-3 transition-colors mb-6"
@@ -103,13 +141,13 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="ornek@sirket.com"
               required
-              className="w-full bg-[#07090E] border border-white/10 rounded-xl px-4 py-3.5 text-white text-[14px] outline-none focus:border-[#00F0FF]/50 focus:ring-1 focus:ring-[#00F0FF]/50 transition-all placeholder:text-[#8E95B3]/50"
+              className="w-full bg-[#07090E] border border-white/10 rounded-xl px-4 py-3.5 text-white text-[14px] outline-none transition-all placeholder:text-[#8E95B3]/50"
             />
           </div>
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="text-[#8E95B3] text-[13px] font-medium block">Şifre</label>
-              <Link href="#" className="text-[#00F0FF] text-[12px] hover:underline">Şifremi unuttum</Link>
+              <Link href="#" style={{color: branding.color}} className="text-[12px] hover:underline">Şifremi unuttum</Link>
             </div>
             <input 
               type="password" 
@@ -117,14 +155,14 @@ export default function LoginPage() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
               required
-              className="w-full bg-[#07090E] border border-white/10 rounded-xl px-4 py-3.5 text-white text-[14px] outline-none focus:border-[#00F0FF]/50 focus:ring-1 focus:ring-[#00F0FF]/50 transition-all placeholder:text-[#8E95B3]/50 tracking-widest"
+              className="w-full bg-[#07090E] border border-white/10 rounded-xl px-4 py-3.5 text-white text-[14px] outline-none transition-all placeholder:text-[#8E95B3]/50 tracking-widest"
             />
           </div>
 
           <motion.button 
             type="submit"
             disabled={loading}
-            whileHover={{ scale: 1.02, boxShadow: "0 0 20px rgba(0,240,255,0.4)" }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="w-full bg-gradient-to-r from-[#00F0FF] to-[#8A2BE2] text-white font-bold py-3.5 rounded-xl mt-4 transition-all text-[15px] disabled:opacity-50 flex justify-center items-center h-[52px]"
           >
@@ -141,5 +179,13 @@ export default function LoginPage() {
         </p>
       </motion.div>
     </main>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#05070A] flex items-center justify-center text-white">Yükleniyor...</div>}>
+      <LoginContent />
+    </Suspense>
   );
 }
