@@ -66,8 +66,7 @@ export default function MarketingPage() {
             <a className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors" href="#">Fiyatlandırma</a>
           </nav>
           <div className="hidden md:flex items-center gap-4">
-            <a className="text-sm font-medium text-white hover:text-gray-300 transition-colors px-4 py-2 border border-[#1E293B] rounded-lg hover:bg-[#14203A]" href="/login">Giriş Yap</a>
-            <a className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2.5 rounded-lg shadow-lg shadow-blue-600/30" href="/login">Ücretsiz Demo</a>
+            <a className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2.5 rounded-lg shadow-lg shadow-blue-600/30" href="#">Ücretsiz Demo</a>
           </div>
           <button className="lg:hidden text-[#94A3B8] hover:text-white">
             <i className="fa-solid fa-bars text-2xl"></i>
