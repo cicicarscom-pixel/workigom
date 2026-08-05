@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST=function(e){return{__rewrites:{afterFiles:[],beforeFiles:[],fallback:[{has:e,source:"/ledger/:path*",destination:e}]},"/_error":["static/chunks/pages/_error-5d542323aef40f7f.js"],sortedPages:["/_app","/_error"]}}(void 0),self.__BUILD_MANIFEST_CB&&self.__BUILD_MANIFEST_CB();
