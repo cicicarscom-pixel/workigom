@@ -226,7 +226,7 @@ export default function MarketingPage() {
                   </a>
                 </div>
                 <div className="relative flex items-center justify-center h-full min-h-[300px]">
-                  <img src="/workigom2.png" alt="Workigom Ledger Web" className="w-full max-w-[320px] object-contain relative z-10 drop-shadow-2xl translate-x-4" />
+                  <img src="/workigom2.png" alt="Workigom Ledger Web" className="w-full max-w-[450px] object-contain relative z-10 drop-shadow-2xl" />
                 </div>
               </div>
             </div>

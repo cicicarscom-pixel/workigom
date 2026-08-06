@@ -32,3 +32,24 @@ Bu dosya, Workigom Marketing web sitesi (Next.js App Router) üzerinde AI Agent 
 
 ---
 *Bu dosya, gelecekteki geliştirmelerde referans alınması amacıyla "agent hafızası" olarak kullanılacaktır.*
+
+## 🚀 Son Gelistirmeler (Agustos 2026)
+
+### 1. Vercel Deployment & Monorepo Ayrismasi
+- Vercel'deki Next.js build problemlerini (Orn: 'npm error Unsupported URL Type "workspace:"') cozmek icin projelerin bagimliliklari temizlendi ve package.json dosyalarindan 'workspace:*' ibareleri kaldirildi.
+- Vercel'in node_modules ve .next klasorlerini onbellege alip hata firlatmasini onlemek amaciyla .gitignore dosyasi duzeltildi/eklendi.
+- flowweb (Eski standalone marketing) projesi pasife cekilme surecine girdi. Vercel'de uygulamalarin (flow ve ledger) ana repolarina (flow.workigom.com vb.) yonlendirilmesi icin domain mimarisi revize edildi.
+
+### 2. Ortak Login Yapisi (Dinamik Branding)
+- app/login/page.tsx sayfasi useSearchParams kullanilarak dinamik hale getirildi. 
+- Kullanicilar app=ledger parametresi ile geldiklerinde lila/mor (Ledger), app=flow ile geldiklerinde turkuaz (Flow) temali ekranlarla karsilanacak yapi kuruldu.
+- Ancak gercek uygulamalarin kendi giris ekranlari (subdomain'ler) oldugu netlesince, Landing page uzerindeki 'Giris Yap' butonlari direkt olarak uygulamalarin https://flow.workigom.com/login adreslerine baglandi.
+- Ana sayfadaki (www.workigom.com) genel 'Giris Yap' butonu gereksiz oldugu icin kaldirildi.
+
+### 3. Ana Sayfa (Workigom Marketing) Revizyonlari
+- Workigom ana sayfasindaki eski mockup gorselleri silinip yerlerine kullanicidan gelen workigom1.mp4, workigom2.png, workigom3.png medyalari entegre edildi.
+- Hero bolumundeki videonun boyutu, alanini tam doldurmasi icin Tailwind siniflari (max-w-[800px], lg:scale-[1.18], lg:h-[600px]) ile detayli olarak ayarlandi ve hizalandi.
+
+### 4. Ekosistem Mimari Dokumantasyonu
+- Her bir projenin kok dizinine (workigom, flow, ledger, flowweb) Workigom Ekosistem Mimarisini (# Workigom Ecosystem Architecture) ve Vercel Root Directory + Environment Variables kurallarini aciklayan standart bir dokumantasyon eklendi.
+- Ozellikle flow uygulamasinin Vercel'de Internal Server Error (500) vermemesi icin yerel .env dosyasindaki degerlerin manuel olarak Vercel paneline girilmesi gerektigi kayit altina alindi.
