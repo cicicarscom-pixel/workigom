@@ -93,8 +93,8 @@ export default function LedgerMarketingPage() {
 
         {/* BEGIN: FeaturesSection */}
         <section className="py-12 bg-[#0B0F19]">
-          <div className="container mx-auto px-6 overflow-x-auto">
-            <div className="flex flex-nowrap md:flex-wrap lg:flex-nowrap gap-4 min-w-max">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-wrap gap-6 justify-center">
               {/* Step 1 */}
               <div className="glass-panel p-5 rounded-xl relative w-64 flex-shrink-0">
                 <div className="absolute -top-3 -left-3 w-6 h-6 bg-[#8C3FE8] rounded-full flex items-center justify-center text-xs font-bold shadow-lg">1</div>
