@@ -58,19 +58,11 @@ export async function middleware(request: NextRequest) {
     return redirectResponse;
   }
 
-  const isAuthPage = request.nextUrl.pathname.startsWith('/ledger/login') || request.nextUrl.pathname.startsWith('/ledger/register');
-  const isLedgerRoute = request.nextUrl.pathname.startsWith('/ledger');
-  const isStaticAsset = request.nextUrl.pathname.includes('/_next/') || request.nextUrl.pathname.match(/\.(png|jpg|jpeg|gif|webp|svg|css|js|ico)$/);
-
   // If user is not logged in and tries to access a protected ledger route, redirect to login
-  if (!user && isLedgerRoute && !isAuthPage && !isStaticAsset && request.nextUrl.pathname !== '/ledger') {
-    return NextResponse.redirect(new URL('/ledger/login', request.url));
-  }
+  // (Removed: ledger routes are now fully proxied to the ledger app which handles its own auth)
 
   // If user is logged in and tries to access login/register, redirect to dashboard
-  if (user && isAuthPage) {
-    return NextResponse.redirect(new URL('/ledger/dashboard', request.url));
-  }
+  // (Removed: ledger routes are now fully proxied to the ledger app)
 
   return supabaseResponse;
 }
