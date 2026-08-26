@@ -1,4 +1,6 @@
 import React from 'react';
+import { MarketingHeader } from '@/components/MarketingHeader';
+import { MarketingFooter } from '@/components/MarketingFooter';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0; // Prevent caching
@@ -6,68 +8,9 @@ export const revalidate = 0; // Prevent caching
 export default function MarketingPage() {
   return (
     <div className="bg-[#040B16] text-[#F8FAFC] min-h-screen flex flex-col overflow-x-hidden font-sans">
-      <style dangerouslySetInnerHTML={{__html: `
-        .glass-card {
-          background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.4) 100%);
-          backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        }
 
-        .text-gradient {
-          background: linear-gradient(to right, #8B5CF6, #3B82F6);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-        
-        .glow-effect {
-          position: relative;
-        }
-        .glow-effect::before {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 150%;
-          height: 150%;
-          background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(0,0,0,0) 70%);
-          z-index: -1;
-          pointer-events: none;
-        }
-      `}} />
 
-      {/* BEGIN: Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-[#1E293B]/50">
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-          <a className="flex items-center gap-3 group" href="#">
-            <img src="/workigom_logo.png" alt="Workigom Logo" className="h-10 w-auto object-contain" />
-          </a>
-          <nav className="hidden lg:flex items-center gap-8">
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">
-                Ürünlerimiz <i className="fa-solid fa-chevron-down text-[10px] mt-0.5 opacity-70 group-hover:opacity-100"></i>
-              </button>
-            </div>
-            <a className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors" href="#">Çözümler</a>
-            <a className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors" href="#">Hakkımızda</a>
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-sm font-medium text-[#94A3B8] hover:text-white transition-colors">
-                Kaynaklar <i className="fa-solid fa-chevron-down text-[10px] mt-0.5 opacity-70 group-hover:opacity-100"></i>
-              </button>
-            </div>
-            <a className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors" href="#">Fiyatlandırma</a>
-          </nav>
-          <div className="hidden md:flex items-center gap-4">
-            <a className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2.5 rounded-lg shadow-lg shadow-blue-600/30" href="#ekosistem">Ücretsiz Demo</a>
-          </div>
-          <button className="lg:hidden text-[#94A3B8] hover:text-white">
-            <i className="fa-solid fa-bars text-2xl"></i>
-          </button>
-        </div>
-      </header>
-      {/* END: Header */}
+      <MarketingHeader />
 
       {/* BEGIN: Main Content */}
       <main className="flex-grow pt-32 pb-0">
@@ -311,47 +254,7 @@ export default function MarketingPage() {
         </section>
       </main>
 
-      <footer className="bg-[#0B1426] border-t border-[#1E293B]/50 pt-16 pb-8">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
-            <div className="lg:col-span-2">
-              <a className="flex items-center gap-3 mb-6" href="#">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
-                  W
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-lg font-bold leading-tight">Workigom</span>
-                  <span className="text-[8px] text-[#94A3B8] tracking-wider uppercase">Business Operating System</span>
-                </div>
-              </a>
-              <p className="text-xs text-[#94A3B8] mb-6 leading-relaxed">
-                Workigom, işletmeler için yapay zeka destekli yönetim platformları geliştiren bir yazılım şirketidir.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-6">Ürünler</h4>
-              <ul className="space-y-4 text-xs text-[#94A3B8]">
-                <li><a className="hover:text-white transition-colors" href="/flow">Workigom Flow</a></li>
-                <li><a className="hover:text-white transition-colors" href="/ledger">Workigom Ledger</a></li>
-                <li><a className="hover:text-white transition-colors" href="#">Fiyatlandırma</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-6">Şirket</h4>
-              <ul className="space-y-4 text-xs text-[#94A3B8]">
-                <li><a className="hover:text-white transition-colors" href="#">Hakkımızda</a></li>
-                <li><a className="hover:text-white transition-colors" href="#">İletişim</a></li>
-                <li><a className="hover:text-white transition-colors" href="/policy">Gizlilik Politikası</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-[#1E293B]/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-xs text-[#94A3B8]">
-              © {new Date().getFullYear()} Workigom Yazılım A.Ş. Tüm hakları saklıdır.
-            </div>
-          </div>
-        </div>
-      </footer>
+      <MarketingFooter />
     </div>
   );
 }
