@@ -60,7 +60,7 @@ export default function MarketingPage() {
             <a className="text-sm font-medium text-[#94A3B8] hover:text-white transition-colors" href="#">Fiyatlandırma</a>
           </nav>
           <div className="hidden md:flex items-center gap-4">
-            <a className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2.5 rounded-lg shadow-lg shadow-blue-600/30" href="#">Ücretsiz Demo</a>
+            <a className="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors px-5 py-2.5 rounded-lg shadow-lg shadow-blue-600/30" href="#ekosistem">Ücretsiz Demo</a>
           </div>
           <button className="lg:hidden text-[#94A3B8] hover:text-white">
             <i className="fa-solid fa-bars text-2xl"></i>
@@ -122,7 +122,7 @@ export default function MarketingPage() {
                 </a>
               </div>
               <div className="mt-8">
-                <a className="text-sm font-medium text-gray-400 hover:text-white flex items-center gap-2 transition-colors" href="#">
+                <a className="text-sm font-medium text-gray-400 hover:text-white flex items-center gap-2 transition-colors" href="#ekosistem">
                   Platformu Keşfet <i className="fa-solid fa-arrow-right text-xs"></i>
                 </a>
               </div>
@@ -142,7 +142,7 @@ export default function MarketingPage() {
         </section>
 
         {/* BEGIN: Ecosystem Section */}
-        <section className="container mx-auto px-6 mb-32">
+        <section id="ekosistem" className="container mx-auto px-6 mb-32">
           <div className="text-center mb-16">
             <div className="text-[11px] font-bold tracking-widest text-blue-400 uppercase mb-4">TEK PLATFORMA, İKİ GÜÇLÜ ÇÖZÜM</div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Workigom Ekosistemi</h2>
@@ -341,12 +341,13 @@ export default function MarketingPage() {
               <ul className="space-y-4 text-xs text-[#94A3B8]">
                 <li><a className="hover:text-white transition-colors" href="#">Hakkımızda</a></li>
                 <li><a className="hover:text-white transition-colors" href="#">İletişim</a></li>
+                <li><a className="hover:text-white transition-colors" href="/policy">Gizlilik Politikası</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-[#1E293B]/50 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-xs text-[#94A3B8]">
-              © 2024 Workigom Yazılım A.Ş. Tüm hakları saklıdır.
+              © {new Date().getFullYear()} Workigom Yazılım A.Ş. Tüm hakları saklıdır.
             </div>
           </div>
         </div>

@@ -11,8 +11,8 @@ export default function FeaturesSection() {
   const pathFillData = "M0,30 L15,15 L30,25 L50,5 L70,20 L85,10 L100,15 L100,40 L0,40 Z";
 
   return (
-    <section className="relative z-20 w-full max-w-[1200px] mx-auto px-6 mb-32 flex flex-col items-center">
-      <motion.div 
+    <section id="özellikler" className="relative z-20 w-full max-w-[1200px] mx-auto px-6 mb-32 flex flex-col items-center">
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

@@ -16,7 +16,7 @@ const integrations = [
 
 export default function IntegrationsSection() {
   return (
-    <section className="relative z-20 w-full max-w-[1200px] mx-auto px-6 mb-32 flex flex-col items-center">
+    <section id="entegrasyonlar" className="relative z-20 w-full max-w-[1200px] mx-auto px-6 mb-32 flex flex-col items-center">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
