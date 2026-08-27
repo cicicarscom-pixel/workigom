@@ -67,23 +67,26 @@ export default function FiyatlandirmaPage() {
             </div>
 
             {/* Ledger */}
-            <div className="glass-card p-8 rounded-3xl flex flex-col h-full border border-blue-500/30">
+            <div className="glass-card p-8 rounded-3xl flex flex-col h-full border border-[#00C8FF]/50 relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-[#00C8FF] text-black text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-widest">
+                %100 ÜCRETSİZ
+              </div>
               <h3 className="text-xl font-semibold mb-2">Workigom Ledger</h3>
-              <p className="text-sm text-[#94A3B8] mb-6 min-h-[40px]">Mali müşavirler ve muhasebe büroları için.</p>
-              <div className="text-3xl font-bold mb-8">Kullandıkça Öde</div>
+              <p className="text-sm text-[#94A3B8] mb-6 min-h-[40px]">Mali müşavirler için Türkiye'nin tek tamamen ücretsiz yapay zeka asistanı.</p>
+              <div className="text-3xl font-bold mb-8 text-[#00C8FF]">0₺<span className="text-sm text-[#94A3B8] font-normal">/ömür boyu</span></div>
               <ul className="space-y-4 mb-8 flex-grow">
                 <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <i className="fa-solid fa-check text-blue-500"></i> Mükellef Başına Ücretlendirme
+                  <i className="fa-solid fa-check text-[#00C8FF]"></i> Sınırsız Mükellef Yönetimi
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <i className="fa-solid fa-check text-blue-500"></i> Ortak Veritabanı ve Arşiv
+                  <i className="fa-solid fa-check text-[#00C8FF]"></i> Ortak Veritabanı ve Arşiv
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <i className="fa-solid fa-check text-blue-500"></i> Limitsiz AI Doküman Tarama
+                  <i className="fa-solid fa-check text-[#00C8FF]"></i> Limitsiz AI Doküman Tarama (OCR)
                 </li>
               </ul>
-              <Link href="https://ledger.workigom.com" className="block text-center px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors w-full">
-                Ledger'a Katıl
+              <Link href="https://ledger.workigom.com" className="block text-center px-6 py-3 rounded-lg bg-[#00C8FF] hover:bg-[#009ac4] text-black font-bold transition-colors w-full shadow-[0_0_15px_rgba(0,200,255,0.3)]">
+                Hemen Ücretsiz Başla
               </Link>
             </div>
           </div>
