@@ -17,13 +17,13 @@ export default function Navbar() {
         <img src="/images/flow-logo.png" alt="Workigom Flow" className="h-10 w-auto object-contain" />
       </Link>
 
-      {/* Center Links */}
-      <nav className="hidden lg:flex items-center gap-8">
-        {["Özellikler", "Fiyatlandırma", "Çözümler", "Kaynaklar", "Entegrasyonlar", "Blog"].map((item) => (
-          <Link key={item} href={`#${item.toLowerCase()}`} className="text-[#8E95B3] hover:text-white text-[14px] font-medium transition-colors">
-            {item}
-          </Link>
-        ))}
+      <nav className="hidden lg:flex items-center gap-8 text-[14px] font-medium text-[#8E95B3]">
+        <Link href="#özellikler" className="hover:text-white transition-colors">Özellikler</Link>
+        <Link href="/fiyatlandirma" className="hover:text-white transition-colors">Fiyatlandırma</Link>
+        <Link href="/cozumler" className="hover:text-white transition-colors">Çözümler</Link>
+        <Link href="/kaynaklar" className="hover:text-white transition-colors">Kaynaklar</Link>
+        <Link href="#entegrasyonlar" className="hover:text-white transition-colors">Entegrasyonlar</Link>
+        <Link href="/kaynaklar/blog" className="hover:text-white transition-colors">Blog</Link>
       </nav>
 
       {/* Right Buttons */}
