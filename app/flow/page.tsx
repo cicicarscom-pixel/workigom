@@ -88,56 +88,11 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
         </div>
       </div>
 
-      <!-- Hero visual: dashboard preview mockup -->
-      <div style="flex:1 1 480px; min-width:320px; position:relative;">
-        <div class="wf-card" style="padding:20px; position:relative; z-index:2;">
-          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
-            <div style="display:flex; align-items:center; gap:8px;">
-              <div style="width:22px; height:22px; border-radius:6px; background:linear-gradient(135deg,#4edea3,#16a34a);"></div>
-              <span class="wf-display" style="font-size:13px; font-weight:700; color:#ffffff;">Workigom Flow</span>
-            </div>
-            <div style="display:flex; gap:6px;">
-              <span style="width:26px; height:26px; border-radius:7px; background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af); display:inline-flex; align-items:center; justify-content:center;"><svg width="13" height="13" viewBox="0 0 24 24" fill="#fff"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="#fff" stroke-width="2"></rect><circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="2"></circle><circle cx="17.4" cy="6.6" r="1.1"></circle></svg></span>
-              <span style="width:26px; height:26px; border-radius:7px; background:#1877F2; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-size:13px; font-weight:800; font-family:'Sora',sans-serif;">f</span>
-              <span style="width:26px; height:26px; border-radius:7px; background:#111; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-size:11px; font-weight:800;">TT</span>
-              <span style="width:26px; height:26px; border-radius:7px; background:#FF0000; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-size:10px; font-weight:800;">YT</span>
-              <span style="width:26px; height:26px; border-radius:7px; background:#000; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-size:12px; font-weight:800;">X</span>
-              <span style="width:26px; height:26px; border-radius:7px; background:#0A66C2; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-size:10px; font-weight:800;">in</span>
-            </div>
-          </div>
-          <div style="font-size:11px; font-weight:700; color:#9aa39d; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:10px;">Yeni Gönderi</div>
-          <div style="height:120px; border-radius:12px; background:rgba(255,255,255,0.05); display:flex; align-items:center; justify-content:center; margin-bottom:14px; border:1px solid rgba(255,255,255,0.08);">
-            <span style="font-size:13px; color:#b9c4bf;">Harika bir gün! ✨</span>
-          </div>
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
-            <span class="wf-chip-dark" style="padding:8px 14px; font-size:12px; color:#b9c4bf; font-weight:600;">Tarih Seç</span>
-            <button class="wf-btn-primary" style="flex:1; padding:10px 14px; border-radius:10px; font-size:12.5px; font-weight:700;">Tüm Platformlarda Yayınla</button>
-          </div>
-        </div>
-
-        <div class="wf-card" style="position:absolute; top:-26px; right:-18px; z-index:3; padding:14px 16px; width:150px;">
-          <div style="font-size:10px; font-weight:700; color:#9aa39d; text-transform:uppercase; margin-bottom:6px;">Takipçi Büyümesi</div>
-          <div style="font-size:16px; font-weight:800; color:#16a34a; margin-bottom:4px;">+%18 <span style="font-size:10px; color:#9aa39d; font-weight:600;">bu ay</span></div>
-          <svg width="100%" height="30" viewBox="0 0 120 30" preserveAspectRatio="none">
-            <polyline points="0,24 20,20 40,22 60,12 80,14 100,4 120,6" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
-          </svg>
-        </div>
-
-        <div class="wf-card" style="position:absolute; bottom:-30px; left:-24px; z-index:3; padding:14px 16px; width:190px;">
-          <div style="font-size:10px; font-weight:700; color:#9aa39d; text-transform:uppercase; margin-bottom:8px;">Planlanan Gönderiler</div>
-          <div style="display:flex; flex-direction:column; gap:6px;">
-            <div style="display:flex; align-items:center; gap:8px;">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>
-              <span style="font-size:11px; color:#ffffff;">Yeni koleksiyon tanıtımı</span>
-            </div>
-            <div style="font-size:10px; color:#9aa39d; margin-left:21px;">Bugün 18:00</div>
-            <div style="display:flex; align-items:center; gap:8px; margin-top:2px;">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>
-              <span style="font-size:11px; color:#ffffff;">Haftalık kampanya videosu</span>
-            </div>
-            <div style="font-size:10px; color:#9aa39d; margin-left:21px;">Yarın 09:30</div>
-          </div>
-        </div>
+      <!-- Hero visual: Video preview -->
+      <div style="flex:1 1 480px; min-width:320px; position:relative; display:flex; align-items:center; justify-content:center; z-index:2;">
+        <video autoPlay loop muted playsInline style="width:100%; max-width:600px; border-radius:24px; box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(78,222,163,0.15); border:1px solid rgba(255,255,255,0.1);">
+          <source src="/videos/hero_video.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   </div>
