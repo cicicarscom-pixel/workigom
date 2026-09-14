@@ -89,8 +89,8 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
       </div>
 
       <!-- Hero visual: Video preview -->
-      <div style="flex:1 1 480px; min-width:320px; position:relative; display:flex; align-items:center; justify-content:center; z-index:2;">
-        <video autoPlay loop muted playsInline style="width:100%; max-width:600px; border-radius:24px; box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(78,222,163,0.15); border:1px solid rgba(255,255,255,0.1);">
+      <div style="flex:1.5 1 600px; min-width:400px; position:relative; display:flex; align-items:center; justify-content:center; z-index:2;">
+        <video autoPlay loop muted playsInline style="width:125%; max-width:750px; border-radius:24px; box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 40px rgba(78,222,163,0.15); border:1px solid rgba(255,255,255,0.1); transform: translateX(5%);">
           <source src="/videos/hero_video.mp4" type="video/mp4" />
         </video>
       </div>
