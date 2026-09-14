@@ -16,7 +16,7 @@ export default function FlowLandingPage() {
     .wf-body { font-family: 'Manrope', system-ui, sans-serif; }
     .wf-display { font-family: 'Sora', system-ui, sans-serif; }
     a.wf-link { color: #16a34a; text-decoration: none; }
-    a.wf-link:hover { color: #15803d; }
+    a.wf-link:hover { color: #4edea3; }
     .wf-btn-primary { background: #16a34a; color: #fff; border: none; cursor: pointer; }
     .wf-btn-primary:hover { background: #15803d; }
     .wf-btn-primary-dark { background: #4edea3; color: #003824; border: none; cursor: pointer; }
@@ -30,7 +30,7 @@ export default function FlowLandingPage() {
     .wf-chip-light { background: #f2f6f4; border: 1px solid #e5e9e7; border-radius: 999px; }
     .wf-chip-dark { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; }
     .wf-nav-link { color: #b9c4bf; text-decoration: none; }
-    .wf-nav-link:hover { color: #0f1b16; }
+    .wf-nav-link:hover { color: #4edea3; }
   
 a.wf-btn-primary, a.wf-btn-primary-dark {
   text-decoration: none;
