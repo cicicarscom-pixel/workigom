@@ -9,12 +9,12 @@ export const metadata = {
 export default function FlowLandingPage() {
   return (
     <>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" />
       <style dangerouslySetInnerHTML={{ __html: `
     * { box-sizing: border-box; }
     body { margin: 0; }
-    .wf-body { font-family: 'Manrope', system-ui, sans-serif; }
-    .wf-display { font-family: 'Sora', system-ui, sans-serif; }
+    .wf-body { font-family: 'Bricolage Grotesque', system-ui, sans-serif; }
+    .wf-display { font-family: 'Bricolage Grotesque', system-ui, sans-serif; }
     a.wf-link { color: #16a34a; text-decoration: none; }
     a.wf-link:hover { color: #4edea3; }
     .wf-btn-primary { background: #16a34a; color: #fff; border: none; cursor: pointer; }
@@ -48,7 +48,7 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
   <!-- NAV (light) -->
   <div style="position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between; padding:20px 64px; max-width:1320px; margin:0 auto;">
     <div style="display:flex; align-items:center; gap:10px;">
-      <div style="width:32px; height:32px; border-radius:9px; background:linear-gradient(135deg,#4edea3,#16a34a); display:flex; align-items:center; justify-content:center; font-weight:800; color:#062b1a; font-family:'Sora',sans-serif;">W</div>
+      <div style="width:32px; height:32px; border-radius:9px; background:linear-gradient(135deg,#4edea3,#16a34a); display:flex; align-items:center; justify-content:center; font-weight:800; color:#062b1a; font-family:'Bricolage Grotesque',sans-serif;">W</div>
       <span class="wf-display" style="font-weight:700; font-size:18px; letter-spacing:-0.01em; color:#ffffff;">Workigom <span style="color:#16a34a;">Flow</span></span>
     </div>
     <div style="display:flex; align-items:center; gap:32px;">
@@ -56,7 +56,7 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
       <a class="wf-nav-link" href="#nasil-calisir" style="font-size:14px; font-weight:600;">Nasıl Çalışır</a>
       <a class="wf-nav-link" href="#sss" style="font-size:14px; font-weight:600;">SSS</a>
     </div>
-    <a href="https://flow.workigom.com/login"  class="wf-btn-primary" style="padding:10px 20px; border-radius:10px; font-size:14px; font-weight:700; font-family:'Manrope',sans-serif;" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center; box-sizing:border-box;">Ücretsiz Dene</a>
+    <a href="https://flow.workigom.com/login"  class="wf-btn-primary" style="padding:10px 20px; border-radius:10px; font-size:14px; font-weight:700; font-family:'Bricolage Grotesque',sans-serif;" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center; box-sizing:border-box;">Ücretsiz Dene</a>
   </div>
 
   <!-- HERO (dark teal-black band) -->
@@ -80,8 +80,8 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
           Üstelik WhatsApp mesajlarınıza ve sosyal medya yorumlarınıza da 7/24 yanıt veren, kişiliğini sizin seçtiğiniz bir yapay zekâ asistanınız olur. 😊
         </p>
         <div style="display:flex; gap:14px; flex-wrap:wrap;">
-          <a href="https://flow.workigom.com/login"  class="wf-btn-primary-dark" style="padding:14px 26px; border-radius:12px; font-size:15px; font-weight:700; font-family:'Manrope',sans-serif;" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center; box-sizing:border-box;">Ücretsiz Dene</a>
-          <button class="wf-btn-ghost-dark" style="padding:14px 26px; border-radius:12px; font-size:15px; font-weight:600; font-family:'Manrope',sans-serif; display:flex; align-items:center; gap:8px;">
+          <a href="https://flow.workigom.com/login"  class="wf-btn-primary-dark" style="padding:14px 26px; border-radius:12px; font-size:15px; font-weight:700; font-family:'Bricolage Grotesque',sans-serif;" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center; box-sizing:border-box;">Ücretsiz Dene</a>
+          <button class="wf-btn-ghost-dark" style="padding:14px 26px; border-radius:12px; font-size:15px; font-weight:600; font-family:'Bricolage Grotesque',sans-serif; display:flex; align-items:center; gap:8px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9.5"></circle><path d="M10 8.5l6 3.5-6 3.5z" fill="currentColor" stroke="none"></path></svg>
             Nasıl Çalışır
           </button>
@@ -500,17 +500,17 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
     </div>
     <div style="display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px;">
       <div class="wf-card" style="padding:28px;">
-        <div style="width:44px; height:44px; border-radius:12px; background:rgba(78,222,163,0.15); display:flex; align-items:center; justify-content:center; color:#16a34a; margin-bottom:18px; font-weight:800; font-family:'Sora',sans-serif;">1</div>
+        <div style="width:44px; height:44px; border-radius:12px; background:rgba(78,222,163,0.15); display:flex; align-items:center; justify-content:center; color:#16a34a; margin-bottom:18px; font-weight:800; font-family:'Bricolage Grotesque',sans-serif;">1</div>
         <h4 class="wf-display" style="font-size:17px; font-weight:700; margin:0 0 8px; color:#ffffff;">Hesabınızı Bağlayın</h4>
         <p style="font-size:13.5px; line-height:1.6; color:#b9c4bf; margin:0;">WhatsApp ve sosyal medya hesaplarınızı birkaç dakikada bağlayın.</p>
       </div>
       <div class="wf-card" style="padding:28px;">
-        <div style="width:44px; height:44px; border-radius:12px; background:rgba(99,102,241,0.15); display:flex; align-items:center; justify-content:center; color:#6366f1; margin-bottom:18px; font-weight:800; font-family:'Sora',sans-serif;">2</div>
+        <div style="width:44px; height:44px; border-radius:12px; background:rgba(99,102,241,0.15); display:flex; align-items:center; justify-content:center; color:#6366f1; margin-bottom:18px; font-weight:800; font-family:'Bricolage Grotesque',sans-serif;">2</div>
         <h4 class="wf-display" style="font-size:17px; font-weight:700; margin:0 0 8px; color:#ffffff;">Asistanınızı Tanımlayın</h4>
         <p style="font-size:13.5px; line-height:1.6; color:#b9c4bf; margin:0;">İşletmenize özel karakteri ve talimatları belirleyin.</p>
       </div>
       <div class="wf-card" style="padding:28px;">
-        <div style="width:44px; height:44px; border-radius:12px; background:rgba(217,119,6,0.15); display:flex; align-items:center; justify-content:center; color:#d97706; margin-bottom:18px; font-weight:800; font-family:'Sora',sans-serif;">3</div>
+        <div style="width:44px; height:44px; border-radius:12px; background:rgba(217,119,6,0.15); display:flex; align-items:center; justify-content:center; color:#d97706; margin-bottom:18px; font-weight:800; font-family:'Bricolage Grotesque',sans-serif;">3</div>
         <h4 class="wf-display" style="font-size:17px; font-weight:700; margin:0 0 8px; color:#ffffff;">Müşterileriniz Yanıt Alsın</h4>
         <p style="font-size:13.5px; line-height:1.6; color:#b9c4bf; margin:0;">Yapay zekâ, siz uğraşmadan 7/24 devrede kalır.</p>
       </div>
@@ -536,7 +536,7 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
     <div style="position:relative; max-width:700px; margin:0 auto;">
       <h2 class="wf-display" style="font-size:34px; font-weight:700; margin:0 0 16px; letter-spacing:-0.01em; color:#fff;">İşletmenizin Dijital Gücünü Artırın</h2>
       <p style="font-size:15.5px; color:#b9c4bf; margin:0 0 32px;">Hemen Workigom Flow'u deneyin, tüm sosyal medya hesaplarınızı tek yerden yönetin.</p>
-      <a href="https://flow.workigom.com/login"  class="wf-btn-primary-dark" style="padding:16px 36px; border-radius:12px; font-size:16px; font-weight:700; font-family:'Manrope',sans-serif;" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center; box-sizing:border-box;">Ücretsiz Dene</a>
+      <a href="https://flow.workigom.com/login"  class="wf-btn-primary-dark" style="padding:16px 36px; border-radius:12px; font-size:16px; font-weight:700; font-family:'Bricolage Grotesque',sans-serif;" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center; box-sizing:border-box;">Ücretsiz Dene</a>
     </div>
   </div>
 
@@ -545,7 +545,7 @@ a.wf-btn-primary, a.wf-btn-primary-dark {
     <div style="max-width:1320px; margin:0 auto; display:flex; justify-content:space-between; align-items:flex-start; gap:40px; flex-wrap:wrap;">
       <div style="max-width:280px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
-          <div style="width:26px; height:26px; border-radius:7px; background:linear-gradient(135deg,#4edea3,#16a34a); display:flex; align-items:center; justify-content:center; font-weight:800; color:#062b1a; font-size:13px; font-family:'Sora',sans-serif;">W</div>
+          <div style="width:26px; height:26px; border-radius:7px; background:linear-gradient(135deg,#4edea3,#16a34a); display:flex; align-items:center; justify-content:center; font-weight:800; color:#062b1a; font-size:13px; font-family:'Bricolage Grotesque',sans-serif;">W</div>
           <span class="wf-display" style="font-weight:700; font-size:15px; color:#ffffff;">Workigom Flow</span>
         </div>
         <p style="font-size:12.5px; line-height:1.6; color:#8a958f; margin:0;">Esnaf ve küçük işletmeler için WhatsApp ve sosyal medya yapay zekâ asistanı.</p>
